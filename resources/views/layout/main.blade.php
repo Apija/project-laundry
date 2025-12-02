@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  class="layout-menu-fixed layout-compact"
-  data-assets-path="../assets/"
-  data-template="vertical-menu-template-free">
-  <head>
-    
+<html lang="en" class="layout-menu-fixed layout-compact" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+
+<head>
+
     <title>Laundry</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-    
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
 
@@ -116,21 +114,48 @@
                         </div>
 
                         {{-- Github & User Menu --}}
-                        <ul class="navbar-nav flex-row align-items-center">
-
-                            <li class="nav-item dropdown-user dropdown">
-                                <a class="nav-link dropdown-toggle hide-arrow p-0" data-bs-toggle="dropdown">
-                                    <div class="avatar avatar-online">
-                                        <img src="/assets/img/avatars/1.png" class="w-px-40 rounded-circle" />
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);"
+                                data-bs-toggle="dropdown">
+                                <div class="avatar avatar-online">
+                                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img src="../assets/img/avatars/1.png" alt
+                                                        class="w-px-40 h-auto rounded-circle" />
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0">John Doe</h6>
+                                                <small class="text-body-secondary">Admin</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider my-1"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="icon-base bx bx-user icon-md me-3"></i><span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider my-1"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="icon-base bx bx-power-off icon-md me-3"></i><span>Log Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
                     </div>
                 </nav>
@@ -148,7 +173,8 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>,
-                            made with ❤️ by <a href="https://themeselection.com" class="footer-link">ThemeSelection</a>
+                            made with ❤️ by <a href="https://themeselection.com"
+                                class="footer-link">ThemeSelection</a>
                         </div>
 
                         <div class="d-none d-lg-inline-block">
